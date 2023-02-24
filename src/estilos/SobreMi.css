@@ -1,0 +1,180 @@
+/*Sobre mi*/
+.contenedor-sobreMi {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+
+.sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+
+.parrafo-sobremi {
+    order: -1;
+}
+
+.parrafo-sobremi h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: var(--verde);
+}
+
+.parrafo-sobremi p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.foto-personal {
+    width: 20rem;
+}
+
+.vermas {
+    display: block;
+    width: 35%;
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 0.5rem;
+    transition-duration: 1s;
+    border-radius: 0.5rem;
+}
+
+.vermas:hover {
+    color: var(--blanco);
+    background-color: var(--verde);
+}
+
+
+@media (min-width: 768px) {
+    .sobre-mi {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+        gap: 5rem;
+    }
+
+    .parrafo-sobremi {
+        width: 60%;
+        order: 1;
+    }
+
+    .parrafo-sobremi h2 {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    .foto-personal {
+        width: 30rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contenedor-sobreMi {
+        width: 80%;
+    }
+
+    .parrafo-sobremi h2 {
+        font-size: 3rem;
+    }
+
+    .parrafo-sobremi p {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .contenedor-sobreMi {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1880px) {
+
+    .contenedor-sobreMi {
+        width: 50%;
+    }
+
+    .parrafo-sobremi h2 {
+        font-size: 3.5rem;
+    }
+
+    .parrafo-sobremi p {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+
+
+/*HABILIDADES*/
+
+.habilidades {}
+
+.subtitulo-habilidades {
+    max-width: 100%;
+
+}
+
+.sub-habilidades {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: start;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.sub-habilidades span {
+    font-weight: 300;
+    text-transform: lowercase;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.icono-habilidades {
+    width: 10rem;
+    padding: 0.2rem;
+}
+
+@media (min-width: 768px) {
+    .icono-habilidades {
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor-habilidades {
+        gap: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contenedor-habilidades {
+        gap: 0;
+    }
+}

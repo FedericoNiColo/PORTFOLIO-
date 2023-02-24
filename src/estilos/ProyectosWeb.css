@@ -1,0 +1,105 @@
+.tarjeta {
+    background-color: var(--gris-claro);
+    width: 49%;
+    border-radius: 0.5rem;
+}
+
+.nombre-tarjeta {
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.fondo-tarjeta {
+    width: 100%;
+    height: 10rem;
+    border-top: 0.3rem solid var(--verde);
+    object-fit: cover;
+}
+
+
+.fondo-tarjeta img {
+    width: 2.5rem;
+}
+
+.boton-detalles {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+    border-top: 0.2rem solid var(--gris-oscuro);
+    color: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.icono {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.boton-detalles:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+
+    .tarjeta {
+        width: 30%;
+    }
+
+    .fondo-tarjeta {
+        height: 10rem;
+    }
+
+    .fondo-tarjeta:hover {
+        opacity: 0.9;
+    }
+
+    .fondo-tarjeta img {
+        width: 4rem;
+    }
+
+    .nombre-tarjeta {
+        font-size: 1.5rem;
+    }
+
+    .boton-detalles {
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .tarjeta {
+        width: 23%;
+    }
+    .fondo-tarjeta {
+        height: 12rem;
+    }
+
+    .icono {
+        width: 2.4rem;
+    }
+}
+@media (min-width: 1280px) {
+    .nombre-tarjeta {
+        font-size: 2rem;
+    }
+
+    .fondo-tarjeta {
+        height: 18rem;
+    }
+
+   
+
+}
+
