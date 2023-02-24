@@ -1,4 +1,4 @@
-import '../estilos/trabajos.css'
+import '../estilos/Trabajos.css'
 import React from 'react'
 import useProyectosProvider from '../hooks/useProyectosProvider'
 import ProyectoWeb from './ProyectoWeb'
