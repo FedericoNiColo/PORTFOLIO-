@@ -75,7 +75,7 @@
 
 .contener-portada img {
     filter: drop-shadow(5px 2px 5px var(--gris));
-    width: 25rem;
+    width: 30rem;
     margin: 0 auto;
     position: relative;
     bottom: 4rem;
