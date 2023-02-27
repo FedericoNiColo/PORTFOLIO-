@@ -41,7 +41,7 @@
 }
 
 .icono {
-    width: 1.5rem;
+    
     height: 1.5rem;
 }
 
@@ -73,7 +73,7 @@
     }
 
     .boton-detalles {
-        padding: 1.2rem;
+        padding: 1rem;
     }
 }
 
@@ -87,7 +87,7 @@
     }
 
     .icono {
-        width: 2.4rem;
+        height: 1.8rem;
     }
 }
 @media (min-width: 1280px) {
@@ -99,6 +99,13 @@
         height: 18rem;
     }
 
+    .boton-detalles {
+        padding: 1.2rem;
+    }
+
+    .icono {
+        height: 2.2rem;
+    }
    
 
 }

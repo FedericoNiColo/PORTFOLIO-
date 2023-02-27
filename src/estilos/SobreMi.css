@@ -126,8 +126,6 @@
 
 /*HABILIDADES*/
 
-.habilidades {}
-
 .subtitulo-habilidades {
     max-width: 100%;
 
@@ -149,7 +147,7 @@
 
 .contenedor-habilidades {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;

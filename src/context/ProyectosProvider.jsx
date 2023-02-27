@@ -26,13 +26,13 @@ const ProyectosProvider = ({ children }) => {
             obtenerRenders()
 
             setCargando(false)
-        }, 2000);
+        }, 3000);
 
     }, [])
 
     const obtenerHabilidades = async () => {
 
-        const url = 'http://localhost:1337/api/habilidads?populate=imagen'
+        const url = `${import.meta.env.VITE_API_URL}/habilidads?populate=imagen`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
 
@@ -42,7 +42,7 @@ const ProyectosProvider = ({ children }) => {
 
     const obtenerProyectosWebs = async () => {
 
-        const url = 'http://localhost:1337/api/webs?populate=imagen'
+        const url = `${import.meta.env.VITE_API_URL}/webs?populate=imagen`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
 
@@ -53,7 +53,7 @@ const ProyectosProvider = ({ children }) => {
 
     const obtenerDisenio = async () => {
 
-        const url = 'http://localhost:1337/api/industrials?populate=imagen,portada'
+        const url = `${import.meta.env.VITE_API_URL}/industrials?populate=imagen,portada`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
 
@@ -64,7 +64,7 @@ const ProyectosProvider = ({ children }) => {
 
     const obtenerRenders = async () => {
 
-        const url = 'http://localhost:1337/api/renders?populate=imagen'
+        const url = `${import.meta.env.VITE_API_URL}/renders?populate=imagen`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
 
