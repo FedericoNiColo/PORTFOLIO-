@@ -26,7 +26,7 @@ const ProyectosProvider = ({ children }) => {
             obtenerRenders()
 
             setCargando(false)
-        }, 3000);
+        }, 100);
 
     }, [])
 

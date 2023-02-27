@@ -38,23 +38,38 @@
     width: 20rem;
 }
 
-.vermas {
-    display: block;
-    width: 35%;
-    color: var(--verde);
-    text-decoration: none;
+.cv {
+    display: flex;
+    gap: 2rem;
+}
+
+.cv select {
+    background-color: var(--gris-claro);
+    font-size: 1.5rem;
     font-weight: 300;
-    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.cv option{
+    color: var(--gris);
+}
+
+.vermas-cv {
+    display: block;
+    text-align: end;
+    width: 35%;
+    color: var(--blanco);
+    background-color: var(--verde);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
     padding: 0.5rem;
     transition-duration: 1s;
     border-radius: 0.5rem;
 }
-
-.vermas:hover {
-    color: var(--blanco);
-    background-color: var(--verde);
-}
-
 
 @media (min-width: 768px) {
     .sobre-mi {
@@ -95,6 +110,15 @@
     .parrafo-sobremi p {
         font-weight: 400;
         font-size: 1.4rem;
+    }
+
+    .vermas-cv {
+        gap: 4rem;
+        font-size: 2rem;
+    }
+
+    .cv select {
+        font-size: 2rem;
     }
 
 }

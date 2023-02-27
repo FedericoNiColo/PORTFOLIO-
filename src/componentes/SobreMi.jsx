@@ -2,11 +2,14 @@ import React from 'react'
 import '../estilos/SobreMi.css'
 import 'animate.css';
 import useProyectosProvider from '../hooks/useProyectosProvider'
+import { useState } from 'react';
 
 
 const SobreMi = () => {
 
     const { habilidades } = useProyectosProvider()
+
+    const [cv, setCv] = useState('')
 
     return (
         <section id="sobre-mi" className='animate__animated animate__zoomIn'>
@@ -28,9 +31,26 @@ const SobreMi = () => {
                             a la tarea/trabajo que sea necesario para el bien del grupo y del desarrollo personal.
 
                         </p>
+                        <div className='cv'>
 
-                        <a href="https://www.linkedin.com/in/federico-ni-coló-61b1011b8" className="vermas"
-                            target="_blank">LinkedIn</a>
+                            <select onChange={e => setCv(e.target.value)}>
+
+                                <option value="">CV</option>
+                                <option
+                                    value={'/multimedia/CV-Federico Ni Coló.pdf'}
+                                >Desarrollador Frontend</option>
+                                <option
+                                    value={'/multimedia/Federico Ni Coló.pdf'}
+                                >Diseñador Industrial</option>
+
+                            </select>
+
+                            {cv.length > 0 && <a href={`${cv}`} className="vermas-cv" target="_blank">Ver</a>}
+
+                        </div>
+
+                        {/*  <a href="https://www.linkedin.com/in/federico-ni-coló-61b1011b8" className="vermas"
+                            target="_blank">LinkedIn</a> */}
                     </div>
 
                 </div>
