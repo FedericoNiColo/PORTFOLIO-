@@ -55,6 +55,7 @@
 
 .cv option{
     color: var(--gris);
+    border: none;
 }
 
 .vermas-cv {

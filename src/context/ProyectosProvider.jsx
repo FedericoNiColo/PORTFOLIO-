@@ -18,15 +18,17 @@ const ProyectosProvider = ({ children }) => {
 
     useEffect(() => {
         setCargando(true)
-        setTimeout(() => {
 
-            obtenerHabilidades()
-            obtenerProyectosWebs()
-            obtenerDisenio()
-            obtenerRenders()
+        obtenerHabilidades()
+        obtenerProyectosWebs()
+        obtenerDisenio()
+        obtenerRenders()
+
+        if (renders) {
 
             setCargando(false)
-        }, 100);
+        }
+
 
     }, [])
 

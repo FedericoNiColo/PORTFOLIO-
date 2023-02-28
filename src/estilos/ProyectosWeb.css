@@ -30,7 +30,7 @@
     border: none;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    
+
     border-top: 0.2rem solid var(--gris-oscuro);
     color: var(--gris);
     display: flex;
@@ -41,7 +41,7 @@
 }
 
 .icono {
-    
+
     height: 1.5rem;
 }
 
@@ -82,21 +82,23 @@
     .tarjeta {
         width: 23%;
     }
+
     .fondo-tarjeta {
-        height: 12rem;
+        height: 10rem;
     }
 
     .icono {
         height: 1.8rem;
     }
 }
+
 @media (min-width: 1280px) {
     .nombre-tarjeta {
         font-size: 2rem;
     }
 
     .fondo-tarjeta {
-        height: 18rem;
+        height: 15rem;
     }
 
     .boton-detalles {
@@ -106,7 +108,15 @@
     .icono {
         height: 2.2rem;
     }
-   
+
 
 }
 
+@media (min-width: 2250px) {
+    .tarjeta {
+        width: 23%;
+    }
+    .fondo-tarjeta {
+        height: 18rem;
+    }
+}

@@ -36,7 +36,7 @@ const ModalWebs = () => {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full lg:w-1/2 transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all ">
+                                <Dialog.Panel className="w-full 2xl:w-2/3 transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all ">
                                     <Dialog.Title
                                         as="h3"
                                         className=" p-1 text-start md:text-6xl text-4xl border-b-2 border-b-emerald-700 font-medium uppercase leading-6 text-gray-900"
@@ -59,8 +59,8 @@ const ModalWebs = () => {
                                         <iframe
                                             src={`https://${web}`}
                                             width="100%"
-                                            height="600"
-                                            className='overflow-x-hidden'
+                                            height="700"
+                                            className='overflow-x-hidden 2xl:h-900'
                                         ></iframe>
                                     </div>
 
