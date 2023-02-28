@@ -17,18 +17,21 @@ const ProyectosProvider = ({ children }) => {
     const [cargando, setCargando] = useState(false)
 
     useEffect(() => {
+
         setCargando(true)
 
-        obtenerHabilidades()
-        obtenerProyectosWebs()
-        obtenerDisenio()
-        obtenerRenders()
+        try {
 
-        if (renders) {
+            obtenerHabilidades()
+            obtenerProyectosWebs()
+            obtenerDisenio()
+            obtenerRenders()
 
+        } catch (error) {
+            console.log(error);
+        } finally {
             setCargando(false)
         }
-
 
     }, [])
 
