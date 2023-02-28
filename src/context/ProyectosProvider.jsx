@@ -30,7 +30,10 @@ const ProyectosProvider = ({ children }) => {
         } catch (error) {
             console.log(error);
         } finally {
-            setCargando(false)
+            setTimeout(() => {
+                
+                setCargando(false)
+            }, 3000);
         }
 
     }, [])
