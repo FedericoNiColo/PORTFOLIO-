@@ -58,7 +58,7 @@ const Trabajos = () => {
 
 
             <article className="renders subtitulo">
-                <h2 className="blanco">proyectos realizados en estudio de arquitectura</h2>
+                <h2 className="blanco">proyectos realizados en estudio de arquitectura Armendariz-Zabaleta</h2>
                 <h3 className="blanco sub">renders</h3>
 
                 <div className="imagenes">
