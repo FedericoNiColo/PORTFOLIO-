@@ -15,15 +15,15 @@ const Header = () => {
 
             <div className='contenido-principal'>
                 <div className="saludo animate__animated animate__backInLeft">
-                    <h2>Hola, mi nombre es</h2> 
+                    <h2>Hola, mi nombre es</h2>
                     <h1>Federico
                         <br /> Ni Coló
                     </h1>
-                     <div className='profesiones'>
+                    <div className='profesiones'>
                         <p>Desarrollador Front-End React </p>
-                        <p> Renderista  </p>
+                        <p> Renderista</p>
                         <p>Estudiante avanzado de Diseño Industrial</p>
-                    </div> 
+                    </div>
                 </div>
 
                 <div className='contener-portada animate__animated animate__backInRight'>
