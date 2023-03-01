@@ -20,21 +20,18 @@ const ProyectosProvider = ({ children }) => {
 
         setCargando(true)
 
-        try {
+        const llamadosAPI = async () => {
 
-            obtenerHabilidades()
-            obtenerProyectosWebs()
-            obtenerDisenio()
-            obtenerRenders()
+            await obtenerHabilidades()
+            await obtenerProyectosWebs()
+            await obtenerDisenio()
+            await obtenerRenders()
 
-        } catch (error) {
-            console.log(error);
-        } finally {
-            setTimeout(() => {
-                
-                setCargando(false)
-            }, 3000);
+            setCargando(false)
+            return;
         }
+
+        llamadosAPI()
 
     }, [])
 

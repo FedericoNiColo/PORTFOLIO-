@@ -21,7 +21,6 @@ const Header = () => {
                     </h1>
                     <div className='profesiones'>
                         <p>Desarrollador Front-End React </p>
-                        <p> Renderista</p>
                         <p>Estudiante avanzado de Diseño Industrial</p>
                     </div>
                 </div>
