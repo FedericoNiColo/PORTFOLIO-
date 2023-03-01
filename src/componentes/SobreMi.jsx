@@ -35,7 +35,7 @@ const SobreMi = () => {
 
                             <select onChange={e => setCv(e.target.value)}>
 
-                                <option value="">CV</option>
+                                <option value="">Curriculum Vitae</option>
                                 <option
                                     value={'/multimedia/CV-Federico Ni Coló.pdf'}
                                 >Desarrollador Frontend</option>
