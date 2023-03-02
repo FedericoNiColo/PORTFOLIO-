@@ -42,7 +42,7 @@ const ProyectosProvider = ({ children }) => {
         const resultado = await respuesta.json()
 
         setHabilidades(resultado.data[0].attributes.imagen.data)
-        console.log(habilidades)
+        return;
     }
 
     const obtenerProyectosWebs = async () => {
