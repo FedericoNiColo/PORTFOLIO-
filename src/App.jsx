@@ -13,10 +13,10 @@ function App() {
 
   return (
     <>
-      {cargando ? <Spinner /> : (
 
+      <Header />
+      {cargando ? <Spinner /> : (
         <>
-          <Header />
           <main>
             <SobreMi />
             <Trabajos />
