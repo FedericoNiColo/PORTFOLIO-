@@ -14,9 +14,9 @@ function App() {
   return (
     <>
 
-      <Header />
       {cargando ? <Spinner /> : (
         <>
+          <Header />
           <main>
             <SobreMi />
             <Trabajos />
